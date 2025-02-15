@@ -1,0 +1,10 @@
+/target
+firedbg
+Cargo.lock
+*.sublime*
+.vscode
+.idea/*
+.env
+*/.idea/*
+.env.local
+.DS_Store

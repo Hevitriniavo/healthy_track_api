@@ -1,0 +1,18 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.9.0"
+dotenvy = "0.15.7"
+tokio = { version = "1.43.0", features = ["full"] }
+env_logger = "0.11.6"
+service = {path = "../service"}
+sea-orm = "1.1.5"
+migration = {path = "../migration"}
+validator = { version = "0.20.0", features = ["derive"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.138"
+entity = { path = "../entity"}
+futures-util = "0.3.31"

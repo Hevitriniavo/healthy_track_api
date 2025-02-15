@@ -1,0 +1,28 @@
+[package]
+name = "service"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "service"
+path = "src/lib.rs"
+
+[dependencies]
+entity = { path = "../entity" }
+validator = { version = "0.20.0", features = ["derive"] }
+serde = { version = "1.0.217", features = ["derive"] }
+jsonwebtoken = "9.3.1"
+bcrypt = "0.17.0"
+serde_json = "1.0.138"
+chrono = "0.4.39"
+rust_decimal = "1.36.0"
+lazy_static = "1.5.0"
+dotenvy = "0.15.7"
+
+[dependencies.sea-orm]
+version = "~1.1.5"
+features = [
+    "runtime-tokio-rustls",
+    "sqlx-postgres",
+    "macros"
+]
